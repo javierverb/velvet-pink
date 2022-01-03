@@ -3,7 +3,7 @@
   font-size: 3rem;
 }
 .main-image {
-  min-height: 75vh;
+  max-height: 75vh;
 }
 
 .ff-kalam {
@@ -20,4 +20,7 @@
 
 .container {
   max-width: 1200px !important;
+}
+.golden-color {
+  color: #ffd700;
 }

@@ -48,7 +48,6 @@ button:focus {
 .btn:hover,
 a:hover {
   text-decoration: none;
-  color: #e22104;
 }
 
 .btn-icon {
@@ -89,35 +88,6 @@ a:hover {
   height: 50px;
 }
 
-.nav-link {
-  color: #000;
-}
-
-#navbar-header {
-  height: 100px;
-}
-#navbar-header .navbar-nav .dropdown-menu {
-  border: none;
-  border-bottom: 2px solid #f34949;
-  border-radius: 0 !important;
-  box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
-}
-
-@media (min-width: 1024px) {
-  #navbar-header .navbar-nav {
-    width: 50%;
-  }
-  #navbar-header .dropdown .dropdown-menu {
-    display: block;
-    opacity: 0;
-    transition: all 500ms ease;
-  }
-  #navbar-header .dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-  }
-}
-
 .btn {
   font-size: 14px;
   font-weight: 600;
@@ -132,9 +102,11 @@ a:hover {
   padding: 9px 25px;
 }
 .btn-primary:hover {
-  background-color: #e22104;
-  border-color: #e22104;
-  color: #fff;
+  background-color: #b98580;
+  border-color: #ffd700;
+  color: #ffd700;
+  border-style: solid;
+  border-width: 0.1px;
 }
 
 .btn-shadow {
@@ -237,76 +209,6 @@ a:hover {
 }
 
 /*=====  End of MENU  ======*/
-/*=================================
-=            TESTIMONY            =
-=================================*/
-#gtco-testimonial {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: #fff;
-}
-
-.testi-content {
-  text-align: center;
-}
-.testi-content .testi-text {
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.6;
-  padding: 30px 60px;
-  font-size: 32px;
-}
-.testi-content .testi-author {
-  font-weight: 500;
-}
-.testi-content .testi-desc span {
-  color: #f34949;
-  font-weight: bold;
-}
-.testi-content .owl-dots {
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  left: 0;
-  right: 0;
-  bottom: -50px;
-}
-.testi-content .owl-nav {
-  display: none;
-}
-
-.owl-dot {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  cursor: pointer;
-}
-.owl-dot span {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  border-radius: 50%;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
-  text-indent: -999em;
-  cursor: pointer;
-  position: absolute;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
-  -webkit-transition: box-shadow 0.3s ease, background-color 0.3s ease;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
-}
-.owl-dot.active > span {
-  background-color: transparent;
-  box-shadow: 0 0 0 2px white;
-}
-
-/*=====  End of TESTIMONY  ======*/
 /*===============================
 =            OVERLAY            =
 ===============================*/
@@ -337,9 +239,10 @@ a:hover {
 ============================*/
 .team-card {
   position: relative;
+  overflow: hidden;
 }
 .team-card:hover .team-desc {
-  height: 110px;
+  height: 50%;
 }
 .team-card:hover .team-desc .team-social-links {
   opacity: 1;
@@ -354,7 +257,7 @@ a:hover {
   right: 15px;
   text-align: center;
   padding: 15px;
-  height: 80px;
+  height: 3rem;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -362,6 +265,7 @@ a:hover {
 .team-social-links {
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  margin-top: -0.5rem;
 }
 
 /*=====  End of TEAM  ======*/
