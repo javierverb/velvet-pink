@@ -1,6 +1,6 @@
 #logo {
   font-family: "Kalam", cursive;
-  font-size: 3rem;
+  font-size: 6rem;
 }
 .main-image {
   max-height: 75vh;
@@ -20,7 +20,32 @@
 
 .container {
   max-width: 1200px !important;
+  width: 90%;
 }
 .golden-color {
   color: #ffd700;
+}
+.pink-box {
+  background-color: #f8eeed;
+  padding: 3rem;
+}
+
+/* buttons */
+.pink-button {
+  background: #e9d0cf;
+  border: none !important;
+  color: #fff !important;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 10px !important;
+  width: 100%;
+}
+
+.pink-button:hover,
+.pink-button:focus {
+  background-color: #000 !important;
+  color: #fff !important;
 }

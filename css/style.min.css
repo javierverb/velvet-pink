@@ -10,12 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #000;
-  background: rgb(185, 133, 128);
-  background: linear-gradient(
-    0deg,
-    rgba(185, 133, 128, 1) 19%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-color: white;
 }
 
 .h1,
