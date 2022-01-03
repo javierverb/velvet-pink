@@ -1,7 +1,15 @@
 #logo {
   font-family: "Kalam", cursive;
   font-size: 6rem;
+  width: 90%;
 }
+/* a media query for small resolutions resize the font size */
+@media screen and (max-width: 992px) {
+  #logo {
+    font-size: 4rem;
+  }
+}
+
 .main-image {
   max-height: 75vh;
 }
