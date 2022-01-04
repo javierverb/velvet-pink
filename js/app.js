@@ -13,9 +13,12 @@ const hydrateURL = (text) => {
 };
 
 function sendMessage(kindOfService) {
-  const baseMessage = `
-    Hola!, me gustaría agendar un turno para ${kindOfService}! :) cuál es el precio y las fechas disponibles?
-  `;
+  const products = ["uñas", "depilación"];
+  const baseMessage = products.includes(kindOfService)
+    ? `
+      Hola! me gustaría agendar un turno para ${kindOfService}! :) cuál es el precio y las fechas disponibles?
+    `
+    : kindOfService;
   const url = hydrateURL(baseMessage);
   window.open(url, "_blank");
 }
