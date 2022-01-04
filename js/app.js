@@ -9,7 +9,7 @@ window.onscroll = () => {
 
 const hydrateURL = (text) => {
   const phone = "+5492942560668";
-  return `https://api.whatsapp.com/send?phone=${phone}&text=${text}`;
+  return `https://wa.me/${phone}?text=${text}`;
 };
 
 function sendMessage(kindOfService) {
