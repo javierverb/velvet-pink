@@ -12,7 +12,7 @@ const hydrateURL = (text) => {
   /* checks  first if the browser is mobile */
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   return isMobile
-    ? `whatsapp://${phone}?text=${text}`
+    ? `https://wa.me/${phone}/?text=${text}`
     : `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
 };
 
