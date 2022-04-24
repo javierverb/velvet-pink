@@ -237,32 +237,6 @@ a:hover {
   position: relative;
   overflow: hidden;
 }
-.team-card:hover .team-desc {
-  height: 50%;
-}
-.team-card:hover .team-desc .team-social-links {
-  opacity: 1;
-}
-
-.team-desc {
-  position: absolute;
-  background: #fff;
-  width: auto;
-  left: 15px;
-  bottom: 15px;
-  right: 15px;
-  text-align: center;
-  padding: 15px;
-  height: 3rem;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.team-social-links {
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  margin-top: -0.5rem;
-}
 
 /*=====  End of TEAM  ======*/
 /*===================================

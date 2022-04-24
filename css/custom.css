@@ -1,7 +1,5 @@
 #logo {
-  font-family: "Kalam", cursive;
-  font-size: 6rem;
-  width: 90%;
+  max-width: 350px;
 }
 /* a media query for small resolutions resize the font size */
 @media screen and (max-width: 992px) {
@@ -16,7 +14,11 @@
 }
 
 .main-image {
-  max-height: 75vh;
+  max-height: 80vh;
+}
+.main-image video {
+  object-fit: cover;
+  width: 100%;
 }
 
 .ff-kalam {
@@ -24,7 +26,7 @@
 }
 
 .pink {
-  color: #b98580;
+  color: #deb2c9;
 }
 
 .your-space {
@@ -94,4 +96,32 @@
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
+}
+
+/* team cards */
+.team-card img {
+  max-height: 500px;
+}
+
+/* custom hr divisor */
+hr.hr-divisor {
+  border: 0;
+  border-top: 1.5px dotted #8c8c8c;
+  text-align: center;
+}
+
+hr.hr-divisor:after {
+  content: "\2665";
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #fff;
+  color: #8c8c8c;
+  font-size: 18px;
+}
+
+/* tiny font size */
+.fsize-tiny {
+  font-size: 12px;
 }

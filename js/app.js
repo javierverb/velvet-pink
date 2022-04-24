@@ -8,7 +8,7 @@ window.onscroll = () => {
 };
 
 const hydrateURL = (text) => {
-  const phone = "5492942560668";
+  const phone = "5493512497230";
   /* checks  first if the browser is mobile */
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   return isMobile
@@ -24,3 +24,9 @@ function sendMessage(kindOfService) {
   const url = hydrateURL(baseMessage);
   window.open(url, "_blank");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  new Splide("#splide_1").mount();
+  new Splide("#splide_2").mount();
+  new Splide("#splide_3").mount();
+});
