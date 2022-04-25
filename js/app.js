@@ -90,8 +90,8 @@ function fadeInEffect(el, time) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // fadeOutEffect();
-  // fadeInEffect(document.getElementById("body"), 3000);
+  fadeOutEffect();
+  fadeInEffect(document.getElementById("body"), 3000);
 
   configureAccordion();
   configureSplide();
