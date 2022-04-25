@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const config = {
     type: "loop",
     perPage: 1,
+    pagination: false,
   };
   new Splide("#splide_1", config).mount();
   new Splide("#splide_2", config).mount();
