@@ -68,6 +68,7 @@ function fadeOutEffect() {
       fadeTarget.style.opacity -= 0.5;
     } else {
       clearInterval(fadeEffect);
+      fadeTarget.remove();
     }
   }, 200);
 }
