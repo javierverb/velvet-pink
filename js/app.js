@@ -25,16 +25,7 @@ function sendMessage(kindOfService) {
   window.open(url, "_blank");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const config = {
-    type: "loop",
-    perPage: 1,
-    pagination: false,
-  };
-  new Splide("#splide_1", config).mount();
-  new Splide("#splide_2", config).mount();
-  new Splide("#splide_3", config).mount();
-
+function configureAccordion() {
   const accordionBtns = document.querySelectorAll(".item-header");
 
   accordionBtns.forEach((accordion) => {
@@ -54,4 +45,54 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
   });
+}
+
+function configureSplide() {
+  const config = {
+    type: "loop",
+    perPage: 1,
+    pagination: false,
+  };
+  new Splide("#splide_1", config).mount();
+  new Splide("#splide_2", config).mount();
+  new Splide("#splide_3", config).mount();
+}
+
+function fadeOutEffect() {
+  var fadeTarget = document.getElementById("loader");
+  var fadeEffect = setInterval(function () {
+    if (!fadeTarget.style.opacity) {
+      fadeTarget.style.opacity = 1;
+    }
+    if (fadeTarget.style.opacity > 0) {
+      fadeTarget.style.opacity -= 0.5;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 200);
+}
+
+function fadeInEffect(el, time) {
+  el.style.opacity = 0;
+
+  var last = +new Date();
+  var tick = function () {
+    el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+    last = +new Date();
+
+    if (+el.style.opacity < 1) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) ||
+        setTimeout(tick, 16);
+    }
+  };
+
+  tick();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // fadeOutEffect();
+  // fadeInEffect(document.getElementById("body"), 3000);
+
+  configureAccordion();
+  configureSplide();
 });

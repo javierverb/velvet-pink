@@ -9,7 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link rel="manifest" href="manifest.json" />
     <!-- External CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
 
@@ -35,14 +35,19 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/loader.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/accordion.css" />
   </head>
-  <body class="static-layout">
+  <div id="loader">
+    <img src="img/logo/logo-transparent.png" alt="loading" />
+    <h4 class="loader-text">Cargando...</h4>
+  </div>
+  <body id="body">
     <div id="top"></div>
     <a href="#top" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
     <div class="boxed-page text-center mb-5 mt-3">
-      <img id="logo" src="img/logo/logo-transparent.png" alt="logo" />
+      <img id="logo" src="img/logo/logo-transparent.jpg" alt="logo" />
       <br />
     </div>
     <!-- Welcome Section -->
