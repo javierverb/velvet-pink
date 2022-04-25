@@ -26,9 +26,13 @@ function sendMessage(kindOfService) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  new Splide("#splide_1").mount();
-  new Splide("#splide_2").mount();
-  new Splide("#splide_3").mount();
+  const config = {
+    type: "loop",
+    perPage: 1,
+  };
+  new Splide("#splide_1", config).mount();
+  new Splide("#splide_2", config).mount();
+  new Splide("#splide_3", config).mount();
 
   const accordionBtns = document.querySelectorAll(".item-header");
 
@@ -46,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         //if the accordion is currently closed
         content.style.maxHeight = content.scrollHeight + "px";
-        console.log(content.style.maxHeight);
       }
     };
   });
