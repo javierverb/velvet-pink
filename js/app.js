@@ -29,4 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
   new Splide("#splide_1").mount();
   new Splide("#splide_2").mount();
   new Splide("#splide_3").mount();
+
+  const accordionBtns = document.querySelectorAll(".item-header");
+
+  accordionBtns.forEach((accordion) => {
+    if (accordion.classList.contains("active")) {
+      accordion.nextElementSibling.style.maxHeight = "100%";
+    }
+
+    accordion.onclick = function () {
+      this.classList.toggle("active");
+      let content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        //this is if the accordion is open
+        content.style.maxHeight = null;
+      } else {
+        //if the accordion is currently closed
+        content.style.maxHeight = content.scrollHeight + "px";
+        console.log(content.style.maxHeight);
+      }
+    };
+  });
 });
