@@ -1,6 +1,9 @@
 #logo {
   max-width: 350px;
 }
+.social {
+  font-size: 2rem;
+}
 /* a media query for small resolutions resize the font size */
 @media screen and (min-width: 992px) {
   #demo-video video {
