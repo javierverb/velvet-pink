@@ -37,7 +37,7 @@
 }
 
 .active .item-icon i {
-  transform: rotate(180deg);
+  transform: rotate(220deg);
 }
 
 .active .item-question {

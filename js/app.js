@@ -17,10 +17,7 @@ const hydrateURL = (text) => {
 };
 
 function sendMessage(kindOfService) {
-  const products = ["uñas", "depilación"];
-  const baseMessage = products.includes(kindOfService)
-    ? `Hola! me gustaría agendar un turno para ${kindOfService}! :) cuál es el precio y las fechas disponibles?`
-    : kindOfService;
+  const baseMessage = `Hola! me gustaría agendar un turno para ${kindOfService}! :) cuál es el precio y las fechas disponibles?`;
   const url = hydrateURL(baseMessage);
   window.open(url, "_blank");
 }
@@ -29,10 +26,6 @@ function configureAccordion() {
   const accordionBtns = document.querySelectorAll(".item-header");
 
   accordionBtns.forEach((accordion) => {
-    if (accordion.classList.contains("active")) {
-      accordion.nextElementSibling.style.maxHeight = "100%";
-    }
-
     accordion.onclick = function () {
       this.classList.toggle("active");
       let content = this.nextElementSibling;
@@ -52,10 +45,12 @@ function configureSplide() {
     type: "loop",
     perPage: 1,
     pagination: false,
+    lazyLoad: "nearby",
   };
-  new Splide("#splide_1", config).mount();
-  new Splide("#splide_2", config).mount();
-  new Splide("#splide_3", config).mount();
+  new Splide("#splide_team_1", config).mount();
+  new Splide("#splide_team_2", config).mount();
+  new Splide("#splide_team_3", config).mount();
+  new Splide("#splide_services_1", { ...config, autoplay: "pause" }).mount();
 }
 
 function fadeOutEffect() {
