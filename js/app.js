@@ -50,7 +50,9 @@ function configureSplide() {
   new Splide("#splide_team_1", config).mount();
   new Splide("#splide_team_2", config).mount();
   new Splide("#splide_team_3", config).mount();
-  new Splide("#splide_services_1", { ...config, autoplay: "pause" }).mount();
+  new Splide("#splide_services_1", config).mount();
+  new Splide("#splide_services_2", config).mount();
+  new Splide("#splide_services_3", config).mount();
 }
 
 function fadeOutEffect() {
