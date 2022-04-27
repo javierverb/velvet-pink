@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#team").innerHTML = httpGet(
     `${window.location.origin}/content/team.html`
   );
-  document.querySelector("#team").innerHTML = httpGet(
+  document.querySelector("#attention-schedule").innerHTML = httpGet(
     `${window.location.origin}/content/attention-schedule.html`
   );
 });
