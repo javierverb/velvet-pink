@@ -136,3 +136,7 @@ hr.hr-divisor:after {
   height: 10px;
   transform: rotate(-315deg);
 }
+
+#club-velvet {
+  animation: bounceAnimation 5s ease 0s infinite alternate none;
+}
