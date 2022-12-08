@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1665349459890,
+  "timestamp": 1670520530677,
   "index": "/club-velvet/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,17 @@
         "ignoreVary": true
       },
       "urls": [
-        "/club-velvet/43.7c70d045ed75606a.js",
+        "/club-velvet/289.d781650a6cf6f1cb.js",
+        "/club-velvet/771.64519b0b47c8a9d1.js",
+        "/club-velvet/common.de93c2ee7dc96b3a.js",
         "/club-velvet/favicon.ico",
         "/club-velvet/index.html",
-        "/club-velvet/main.cb117b921684b594.js",
+        "/club-velvet/main.b120e5460d95fdfd.js",
         "/club-velvet/manifest.webmanifest",
         "/club-velvet/polyfills.e973efbc91a63abe.js",
-        "/club-velvet/runtime.0fa51c562f35f1ce.js",
+        "/club-velvet/runtime.f424159841dc1730.js",
         "/club-velvet/scripts.596640eb2ed790f2.js",
-        "/club-velvet/styles.26f7df2ca0f25baa.css"
+        "/club-velvet/styles.b91468cd67701b99.css"
       ],
       "patterns": []
     },
@@ -39,16 +41,23 @@
         "/club-velvet/assets/fonts/Kalam-Regular.ttf",
         "/club-velvet/assets/icons/icon-192x192.png",
         "/club-velvet/assets/icons/icon-512x512.png",
+        "/club-velvet/assets/imgs/circle-plus.png",
+        "/club-velvet/assets/imgs/delete.png",
+        "/club-velvet/assets/imgs/edit.png",
         "/club-velvet/assets/imgs/flower-1.png",
         "/club-velvet/assets/imgs/flower-2.png",
-        "/club-velvet/assets/imgs/logo.png"
+        "/club-velvet/assets/imgs/group.png",
+        "/club-velvet/assets/imgs/history.png",
+        "/club-velvet/assets/imgs/logo.png",
+        "/club-velvet/assets/imgs/nails.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/club-velvet/43.7c70d045ed75606a.js": "70fcb7238cb9d283b719f936c20c75b923351ca0",
+    "/club-velvet/289.d781650a6cf6f1cb.js": "4205a2a8e3450a3dcf60a35e803a39731902ed88",
+    "/club-velvet/771.64519b0b47c8a9d1.js": "99f85b53aa8fa018542226c0cde60c436ced26bd",
     "/club-velvet/JosefinSans-Bold.1ba766da9574925d.ttf": "91223716019d9ff839f9bac0637106f63f133d60",
     "/club-velvet/Kalam-Bold.66c568d50bb3fee8.ttf": "2a559015d425e2197d24dd64ec5f575b713c008f",
     "/club-velvet/Kalam-Regular.a6865ae401ca98df.ttf": "8780563680372a86968c46c50cba05143654fe49",
@@ -57,17 +66,24 @@
     "/club-velvet/assets/fonts/Kalam-Regular.ttf": "8780563680372a86968c46c50cba05143654fe49",
     "/club-velvet/assets/icons/icon-192x192.png": "66556e43bb51817aa09543c715bdda1c70988116",
     "/club-velvet/assets/icons/icon-512x512.png": "9c0450b944269487797ff9727a3dcff30c5fb947",
+    "/club-velvet/assets/imgs/circle-plus.png": "59ea62b6f4a8a338a357791e63697d594f088953",
+    "/club-velvet/assets/imgs/delete.png": "6129a57258c3b4d0ff30337bd6dd6b8a2089c254",
+    "/club-velvet/assets/imgs/edit.png": "c684760c00641771324a1e736c3c5238ddc64494",
     "/club-velvet/assets/imgs/flower-1.png": "81456f8d009848b66acacdd88cac729c69a1b7a7",
     "/club-velvet/assets/imgs/flower-2.png": "b882a84079655050a2933c4b20314dea83f4ec82",
+    "/club-velvet/assets/imgs/group.png": "8900f75d9b096705b1e10875f727951d7fc1609e",
+    "/club-velvet/assets/imgs/history.png": "20396639d93bbe3b4f4f4d6ff33f199907580911",
     "/club-velvet/assets/imgs/logo.png": "d6d894cb7e8398e0eafdbc1aff42ad20c9679d99",
+    "/club-velvet/assets/imgs/nails.png": "086ed3aebb7da727a40efa9524e78f526c011cec",
+    "/club-velvet/common.de93c2ee7dc96b3a.js": "b14c85ae954ab93a905c82a709fb53ffe4443b61",
     "/club-velvet/favicon.ico": "1eb4b169f0efd2010520633ace4c82d1c8347cd2",
-    "/club-velvet/index.html": "2199eef94400b3a3b93b537d3d4d348af62e48d1",
-    "/club-velvet/main.cb117b921684b594.js": "cbfd635a61286c5bddfec1a14b7315b3c8a25c5f",
+    "/club-velvet/index.html": "eb1689d5995e8fc1848fe4ecb9955e2eef8d5700",
+    "/club-velvet/main.b120e5460d95fdfd.js": "b96ae95381af8aed5eb3faf8ff587df8eaa856fe",
     "/club-velvet/manifest.webmanifest": "5477360601e20f938ced4956acfdc8ac64856eca",
     "/club-velvet/polyfills.e973efbc91a63abe.js": "b0ddc97691240cd1d6aea1157ab66fc9cdd5344b",
-    "/club-velvet/runtime.0fa51c562f35f1ce.js": "8d5f65a17a0ec315dbdfc7658f030d75775f4dd5",
+    "/club-velvet/runtime.f424159841dc1730.js": "e444157a7da4a3237666545f297f6edb57931244",
     "/club-velvet/scripts.596640eb2ed790f2.js": "8052332e591484222533846432b3b1afd3b9995d",
-    "/club-velvet/styles.26f7df2ca0f25baa.css": "c1af214fb9e3372c189f6b979c6712ca91967ce6"
+    "/club-velvet/styles.b91468cd67701b99.css": "0ec6c045ad2af085d248f4eb6114bcba28a35efa"
   },
   "navigationUrls": [
     {
