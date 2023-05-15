@@ -24,12 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#attention-schedule").innerHTML = httpGet(
     `${window.location.origin}/content/attention-schedule.html`
   );
-  document.querySelector("#section-services__facial_treatments").innerHTML =
-    httpGet(
-      `${window.location.origin}/content/section-services__facial_treatments.html`
-    );
-  document.querySelector("#section-services__body_treatments").innerHTML =
-    httpGet(
-      `${window.location.origin}/content/section-services__body_treatments.html`
-    );
 });
