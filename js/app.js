@@ -23,6 +23,7 @@ function sendMessage(kindOfService) {
 }
 
 function configureAccordion() {
+
   const accordionBtns = document.querySelectorAll(".item-header");
 
   accordionBtns.forEach((accordion) => {
@@ -40,16 +41,18 @@ function configureAccordion() {
   });
 }
 
-function configureSplide() {
+function configureSplide(id) {
+  if (window.configuredSplides) {
+    return;
+  }
   const config = {
     type: "loop",
     perPage: 1,
     pagination: false,
     lazyLoad: "nearby",
   };
-  new Splide("#splide_team_1", config).mount();
-  new Splide("#splide_team_2", config).mount();
-  new Splide("#splide_services_1", config).mount();
+  new Splide(`#${id}`, config).mount();
+  window.configuredSplides = true;
 }
 
 function fadeOutEffect() {
@@ -84,10 +87,11 @@ function fadeInEffect(el, time) {
   tick();
 }
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
   fadeOutEffect();
   fadeInEffect(document.getElementById("body"), 3000);
 
   configureAccordion();
-  configureSplide();
 });

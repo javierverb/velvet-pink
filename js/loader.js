@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     httpGet(
       `${window.location.origin}/content/section-services__depilation_definitive.html`
     );
-  document.querySelector("#section-services__massages").innerHTML = httpGet(
-    `${window.location.origin}/content/section-services__massages.html`
+  document.querySelector("#section-services__nails").innerHTML = httpGet(
+    `${window.location.origin}/content/section-services__nails.html`
   );
   document.querySelector("#team").innerHTML = httpGet(
     `${window.location.origin}/content/team.html`

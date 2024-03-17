@@ -140,3 +140,8 @@ hr.hr-divisor:after {
 #club-velvet {
   animation: bounceAnimation 5s ease 0s infinite alternate none;
 }
+
+
+#splide_services_1-slide01 {
+  align-self: center;
+}
